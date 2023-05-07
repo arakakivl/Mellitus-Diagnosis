@@ -62,7 +62,7 @@ def generate_dataset(x):
 # Returns a predict model already ready for predicting.
 def make_learn_model():    
     # Storing all data in a list of "Report" objects.
-    dataset = generate_dataset(5000)
+    dataset = generate_dataset(10000)
 
     # Generating classifier
     classifier = tree.DecisionTreeClassifier()
