@@ -69,8 +69,12 @@ def make_learn_model():
     
     # Fitting our model to our generated data.    
     # Also, converting each entry in our dataset into a "readable" one for our predict model (a multidimensional array) and its result (0, 1, 2).
+    
+    # TODO: iterate only once instead of twice.
     classifier.fit([data.raw() for data in dataset], [data.result for data in dataset])
-
+        
+    classifier.fit(raw_data, result_data)
+    
     # Returning our predict model
     return classifier
 
