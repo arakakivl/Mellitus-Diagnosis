@@ -25,6 +25,11 @@ def generate_oral_tolerance(diagnosis):
 
 # Generates a list of 'n' Report objects and returns it.
 def generate_dataset(x):
+    # Verifying if x is an integer.
+    if not str(x).isdigit():
+        raise ValueError("Invalid provided number of data.")
+    x = int(x)
+
     generated_data = []
     normal = pre = mellitus = 0
     
@@ -72,8 +77,6 @@ def make_learn_model():
     
     # TODO: iterate only once instead of twice.
     classifier.fit([data.raw() for data in dataset], [data.result for data in dataset])
-        
-    classifier.fit(raw_data, result_data)
     
     # Returning our predict model
     return classifier
