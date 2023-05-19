@@ -40,7 +40,7 @@ def generate_dataset(x):
         # In fasting test.
         n = random.randint(126, 3 * 126) if m >= 200 else (random.randint(0, 99) if m < 140 else random.randint(100, 125))
 
-        # The casual test. o -ge than 200 if m >= 200 too.
+        # The casual test. o -ge (shell syntax) than 200 if m -ge 200 too.
         o = random.randint(200, 400) if m >= 200 else random.randint(0, 199)
 
         # Constructing a "Report" obj.
