@@ -1,7 +1,7 @@
 '''
 Grupo iamAware:
 João Busar,
-Larissa xyz,
+Larissa Sevirino,
 Luiza Hubert,
 Rafael Nunes,
 Vitor Arakaki
